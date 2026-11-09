@@ -7,7 +7,7 @@
 <meta name="description" content="Veja as vantagens de ter uma página web e peça a sua com a FP08.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Playfair+Display:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#0d2620;--bg2:#143429;--ink:#eef6f2;--mute:#9db8ad;--gold:#ffb703;--coral:#ff6b57;--card:#f7faf8;--dark:#10201b}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -81,22 +81,6 @@ p.lead{color:var(--mute);max-width:560px}
 .col:nth-child(3){animation-duration:25s}
 @keyframes down{to{transform:translateY(-50%)}}
 .mini{border-radius:14px;height:130px;flex:none;padding:12px;color:#fff;font-weight:600;font-size:.8rem;display:flex;align-items:flex-end}
-
-
-/* EXEMPLO LU MODA */
-.ex{text-align:center}
-.ex h2{font-family:'Playfair Display',Georgia,serif;font-style:italic;font-weight:700}
-.lu{max-width:520px;margin:40px auto 0;background:#1f2f4d;color:#e8d9c0}
-.lu .bar{background:#16233b}.lu .bar i{background:#3a4c70}.lu .bar b{background:#243658;color:#b9a98c}
-.lubody{padding:34px 20px;text-align:center}
-.hanger{width:54px;height:54px;margin:0 auto 10px;animation:swing 3.5s ease-in-out infinite;transform-origin:50% 0}
-@keyframes swing{50%{transform:rotate(8deg)}}
-.lubody .t{font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:1.6rem;letter-spacing:.02em}
-.lubody small{color:#b9a98c}
-.chips{display:flex;gap:8px;justify-content:center;margin-top:16px;flex-wrap:wrap}
-.chips span{border:1px solid #e8d9c0;border-radius:30px;padding:3px 14px;font-size:.75rem;animation:bob 4s ease-in-out infinite}
-.chips span:nth-child(2){animation-delay:-1.3s}.chips span:nth-child(3){animation-delay:-2.6s}
-.go.c{display:inline-block;margin-top:34px;background:#e8d9c0;color:#1f2f4d}
 
 /* CTA */
 .cta{text-align:center}
@@ -174,8 +158,8 @@ footer{text-align:center;color:var(--mute);padding:30px;font-size:.8rem}
   <p class="lead rv fu">Lojas, serviços, escolas, moda, agricultura. Cada página é feita à medida.</p>
   <div class="cols rv fu">
     <div class="col">
-      <div class="mini" style="background:#1f2f4d;color:#e8d9c0;font-family:'Playfair Display',serif;font-style:italic;font-size:1rem">LU Moda e Estilo</div><div class="mini" style="background:#2a9d8f">Produtos agrícolas</div><div class="mini" style="background:#6d597a">Serviços</div>
-      <div class="mini" style="background:#1f2f4d;color:#e8d9c0;font-family:'Playfair Display',serif;font-style:italic;font-size:1rem">LU Moda e Estilo</div><div class="mini" style="background:#2a9d8f">Produtos agrícolas</div><div class="mini" style="background:#6d597a">Serviços</div>
+      <div class="mini" style="background:#e76f51">Loja de moda</div><div class="mini" style="background:#2a9d8f">Produtos agrícolas</div><div class="mini" style="background:#6d597a">Serviços</div>
+      <div class="mini" style="background:#e76f51">Loja de moda</div><div class="mini" style="background:#2a9d8f">Produtos agrícolas</div><div class="mini" style="background:#6d597a">Serviços</div>
     </div>
     <div class="col">
       <div class="mini" style="background:#457b9d">Material escolar</div><div class="mini" style="background:#e9a000">Restaurante</div><div class="mini" style="background:#bc4749">Beleza</div>
@@ -186,21 +170,6 @@ footer{text-align:center;color:var(--mute);padding:30px;font-size:.8rem}
       <div class="mini" style="background:#588157">Eletrónicos</div><div class="mini" style="background:#9b5de5">Cursos online</div><div class="mini" style="background:#f15bb5">Joias</div>
     </div>
   </div>
-</section>
-
-<section class="ex">
-  <h2 class="rv fu">Veja como fica uma página de moda</h2>
-  <p class="lead rv fu" style="margin:auto">Um exemplo real feito pela FP08: a LU Moda e Estilo.</p>
-  <div class="browser lu rv fu">
-    <div class="bar"><i></i><i></i><i></i><b>lumodaestilo</b></div>
-    <div class="lubody">
-      <svg class="hanger" viewBox="0 0 64 64" fill="none" stroke="#e8d9c0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M32 22c0-4 6-5 6-10a6 6 0 1 0-12 0"/><path d="M32 22 6 44c-2 2-1 4 2 4h48c3 0 4-2 2-4z"/></svg>
-      <div class="t">LU Moda e Estilo</div>
-      <small>Vestidos, joias e ténis</small>
-      <div class="chips"><span>Vestidos</span><span>Joias</span><span>Ténis</span></div>
-    </div>
-  </div>
-  <a id="lumoda" class="go c rv fu">Experienciar a página web de moda</a>
 </section>
 
 <section class="cta">
@@ -216,16 +185,12 @@ footer{text-align:center;color:var(--mute);padding:30px;font-size:.8rem}
 
 <script>
 // 👉 MUDA AQUI: número de WhatsApp com código do país, sem + nem espaços
-var WHATSAPP = "258847528249";
-// 👉 MUDA AQUI: link da página LU Moda no GitHub Pages
-var LUMODA_URL = "https://mariapintofernando12-cell.github.io/LU--MODA/";
+var WHATSAPP = "258879971385";
 
 document.querySelectorAll('[data-wa]').forEach(function(a){
   a.href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(a.dataset.wa);
   a.target = "_blank"; a.rel = "noopener";
 });
-
-var lm=document.getElementById('lumoda'); lm.href=LUMODA_URL; lm.target='_blank'; lm.rel='noopener';
 
 // Aparecer ao deslizar
 var io = new IntersectionObserver(function(es){
